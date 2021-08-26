@@ -6,4 +6,11 @@ jenkins configuration :
 5.installation of key
 6.installation of java pacakges
 7.start the jenkins services
-
+8.enable the jenkins services
+9.open the port 8080
+10.installation of firewall
+11.start the firewall
+12.enable the firewall
+13.firewall-cmd --zone-public --add-port-8080/tcp --permanent
+14.activate the firewall
+15.accessing the jenkins via internet -->http://publicip:8080
