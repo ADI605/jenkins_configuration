@@ -1,0 +1,15 @@
+command step-by-step for configuration:
+1. wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+2. rpm --import http://pkg.jenkins.io/redhat-stable/jenkins.io.key
+3. yum install jenkins -y
+4. yum install java*
+5. systemctl start jenkins
+6. systemctl status jenkins
+7. systemctl enable jenkins
+8. yum install firewall* -y
+9. systemctl start firewalld
+10. systemctl status firewalld
+11. systemctl enable firewalld
+12. firewall-cmd --zone=public --add=port=8080/tcp --permanent
+13. firewall-cmd --reload
+
